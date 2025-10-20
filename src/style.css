@@ -27,6 +27,16 @@ h1 {
   list-style: none;
   max-width: 690px;
 }
+.nav__list--item a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.nav__list--item a:focus-visible {
+  outline: 2px solid #ff6347;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
 .nav__list--item {
   display: inline;
   cursor: pointer;
@@ -51,6 +61,7 @@ h1 {
     inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
   border: none;
   color: white;
+  text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 

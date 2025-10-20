@@ -1,10 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Автошкола «Права на мыло» — обучение вождению категорий A и B с опытными инструкторами и выгодными ценами." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -20,19 +22,20 @@
         <div class="header__logo">
           <img src="./src/assets/Navbar/2/Content.svg" alt="Права на мыло">
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav" aria-label="Основная навигация">
           <ul class="nav__list">
-            <li class="nav__list--item">Цены и акции</li>
-            <li class="nav__list--item">Курсы вождения</li>
-            <li class="nav__list--item">Теория онлайн</li>
-            <li class="nav__list--item">Частые вопросы</li>
-            <li class="nav__list--item">О нас</li>
+            <li class="nav__list--item"><a href="#hero">Главная</a></li>
+            <li class="nav__list--item"><a href="#about">О нас</a></li>
+            <li class="nav__list--item"><a href="#pricing">Цены и акции</a></li>
+            <li class="nav__list--item"><a href="#team">Команда</a></li>
+            <li class="nav__list--item"><a href="#reviews">Отзывы</a></li>
+            <li class="nav__list--item"><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <button class="header__button">Записаться</button>
+        <a class="header__button" href="#cta-form">Записаться</a>
       </div>
     </header>
-    <section class="hero-section">
+    <section id="hero" class="hero-section">
       <div class="container">
         <div class="hero-section__container">
           <div class="hero-section__title">
@@ -42,7 +45,7 @@
             <p>Мы предлагаем обучение вождению категории B и A с опытными инструкторами. Запишитесь на бесплатное
               вводное занятие и получите возможность стать уверенным водителем.</p>
           </div>
-          <form class="hero_section__input" novalidate>
+          <form id="cta-form" class="hero_section__input" novalidate>
             <div class="hero_section__controls">
               <input type="text" id="cta-input" name="cta-input" placeholder="Ваш номер телефона или e-mail"
                 autocomplete="off" aria-describedby="cta-error" required>
@@ -55,7 +58,7 @@
         </div>
       </div>
     </section>
-    <section class="why-us-section">
+    <section id="about" class="why-us-section">
       <img class="why-us-section__image" src="./src/assets/Layout/201/Placeholder Image.png" alt="БЛА БЛА">
       <div class="why-us-section-info">
         <div class="why-us-description">
@@ -79,7 +82,7 @@
         </div>
       </div>
     </section>
-    <section class="price-section">
+    <section id="pricing" class="price-section">
       <div class="price-section-container">
         <div class="price-section__info">
           <div class="price_section__description">
@@ -94,7 +97,7 @@
         <img src="/src/assets/price/Layout/1/Placeholder Image.png" alt="">
       </div>
     </section>
-    <section class="team-section">
+    <section id="team" class="team-section">
       <div class="container">
         <div class="team-section__inner">
           <p class="team-section__eyebrow">Команда</p>
@@ -149,7 +152,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews-section">
+    <section id="reviews" class="reviews-section">
       <div class="container">
         <div class="reviews-section__header">
           <h2 class="reviews-section__title">ОТЗЫВЫ КЛИЕНТОВ</h2>
@@ -210,7 +213,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer id="contacts" class="footer">
       <div class="container">
         <div class="footer__top">
           <a href="#">Контакты</a>
