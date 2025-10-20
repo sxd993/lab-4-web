@@ -42,12 +42,16 @@
             <p>Мы предлагаем обучение вождению категории B и A с опытными инструкторами. Запишитесь на бесплатное
               вводное занятие и получите возможность стать уверенным водителем.</p>
           </div>
-          <div class="hero_section__input">
-            <input type="text">
-            <button>
-              Записаться
-            </button>
-          </div>
+          <form class="hero_section__input" novalidate>
+            <div class="hero_section__controls">
+              <input type="text" id="cta-input" name="cta-input" placeholder="Ваш номер телефона или e-mail"
+                autocomplete="off" aria-describedby="cta-error" required>
+              <button type="submit">
+                Записаться
+              </button>
+            </div>
+            <p class="hero_section__error" id="cta-error" role="alert" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
